@@ -1,0 +1,38 @@
+## https://github.com/narnaud/clink-terminal/blob/main/.inputrc
+
+$if clink
+set colored-completion-prefix               on
+set colored-stats                           on
+set mark-symlinked-directories              on
+set visible-stats                           off
+set completion-auto-query-items             on
+set history-point-at-end-of-anchored-search on
+set menu-complete-wraparound                off
+set search-ignore-case                      on
+
+set keymap emacs
+## Alt-Ctrl-Shift-H
+"\e[27;8;72~": clink-popup-show-help
+
+# "\t": old-menu-complete
+"\t": clink-select-complete
+## Shift-Tab
+"\e[Z": old-menu-complete-backward
+## Ctrl-Space
+"\e[27;5;32~": clink-select-complete
+
+"\C-x\C-f": dump-functions
+"\C-x\C-m": dump-macros
+"\C-x\C-v": dump-variables
+
+"\C-r": "luafunc:fzf_history"
+"\M-b": "luafunc:fzf_bindings"
+# "\t": "luafunc:fzf_tab"
+## Ctrl-Space
+"\e[27;5;32~": "luafunc:fzf_complete_force"
+
+"\M-d": "luafunc:fzf_directory"
+"\M-f": "luafunc:fzf_file"
+"\M-g": "luafunc:fzf_ripgrep"
+
+$endif

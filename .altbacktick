@@ -1,0 +1,5 @@
+[keyboard]
+modifier_key=win
+
+[behavior]
+ignore_minimized_windows=false
