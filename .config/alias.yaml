@@ -1,21 +1,6 @@
-nv: bash _nvim_standby.sh
-nov: bash _neovide.sh
-git_init: bash git_init.sh
-git_push: bash git_push.sh
-git_re-tag: bash git_re-tag.sh
-git_sync-upstream: bash git_sync-upstream.sh
-magick_annot: bash magick_annot.sh
-magick_gen: bash magick_gen.sh
-magick_gird: bash magick_gird.sh
-magick_halftone: bash magick_halftone.sh
-
 ## Directory Opus
 do: dopus "%CD%\$*"
 e: explorer %CD%\$*
-
-## fzf
-fman: fzf_man
-fscoop: fzf_scoop
 
 ## scoop
 ss: scoop search
@@ -26,5 +11,6 @@ sst: scoop status
 sup: scoop update
 sua: scoop update -a -k
 scc: scoop cleanup * && scoop cache rm *
-fcc: scoop_formatjson-checkver $1
-sib: scoop_install_file
+fcc: scoop-formatjson-checkver $1
+sib: scoop-install-file
+fscoop: fzf-scoop-buckets

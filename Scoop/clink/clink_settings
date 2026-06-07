@@ -2,8 +2,9 @@ autosuggest.enable = true
 autosuggest.strategy = match_prev_cmd
 clink.autoupdate = false
 fzf.default_bindings = true
-fzf_rg.show_preview=bottom
+fzf_rg.show_preview = bottom
+fzf_rg.height = 99%
 history.dupe_mode = erase_prev
-tips.enable=false
+tips.enable = false
 
 terminal.update_title = true
