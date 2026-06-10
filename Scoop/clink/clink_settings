@@ -1,10 +1,9 @@
-autosuggest.enable = true
+autosuggest.enable = True
 autosuggest.strategy = match_prev_cmd
-clink.autoupdate = false
-fzf.default_bindings = true
-fzf_rg.show_preview = bottom
+clink.autoupdate = off
+direnv.enable = True
+fzf.default_bindings = True
 fzf_rg.height = 99%
+fzf_rg.show_preview = bottom
 history.dupe_mode = erase_prev
-tips.enable = false
-
-terminal.update_title = true
+tips.enable = False
