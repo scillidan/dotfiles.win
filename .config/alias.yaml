@@ -13,5 +13,4 @@ sua: scoop update -a -k
 scc: scoop cleanup * && scoop cache rm *
 sr: gsudo scoop reset
 ff-scoop: fzf-scoop-buckets
-fcc: scoop-formatjson-checkver $1
-sib: scoop-install-file
+schk: scoop-formatjson-checkver $1
