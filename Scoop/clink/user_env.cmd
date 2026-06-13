@@ -1,4 +1,16 @@
 @echo off
+REM
+
+REM Add the following into System's PATH and ensure them on the top
+rem C:\Users\User\Scoop\apps\git\current\bin;
+rem C:\Users\User\Scoop\apps\git\current\usr\bin;
+rem C:\Users\User\Scoop\shims
+
+REM Add the following into user's PATH
+rem EDITOR=subl
+rem BROWSER=brave/librewolf
+rem PIPX_HOME="%USERHOME%/.pipx"
+rem PIPX_BIN_DIR="%USERHOME%/.local/bin"
 
 REM Sys
 set "LC_ALL=en_US.utf8"
@@ -45,14 +57,14 @@ set "FZF_RG_FZF_OPTIONS=--multi"
 set "FZF_RG_RG_OPTIONS=--hidden --follow"
 
 REM Zellij
-rem set "ZELLIJ_CONFIG_DIR=%USERHOME%/Share/dotfiles.win/.config/zellij"
-rem set "ZELLIJ_CONFIG_FILE=%USERHOME%/Share/dotfiles.win/.config/zellij/user.kdl"
+set "ZELLIJ_CONFIG_DIR=%USERHOME%/Share/dotfiles/.config/zellij/config"
+set "ZELLIJ_CONFIG_FILE=%USERHOME%/Share/dotfiles/.config/zellij/config/config.kdl"
 
 REM scripts
 set CDS_TERMINAL=wezterm
 
 set CLINK_PATH=^
-%    =%%USERHOME%\Local\Source\clink\clink-gizmos;^
+%    =%%USERHOME%\Share\forks\clink-gizmos;^
 %    =%%USERHOME%\Local\Source\clink\clink-zoxide;^
 %    =%%CLINK_PATH%
 

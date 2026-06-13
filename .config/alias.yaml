@@ -6,11 +6,11 @@ e: explorer %CD%\$*
 ss: scoop search
 si: scoop install
 su: scoop uninstall
+rsi: scoop-reinstall
+rset: gsudo scoop reset
 sh: scoop home
-sst: scoop status
 sup: scoop update
 sua: scoop update -a -k
 scc: scoop cleanup * && scoop cache rm *
-sr: gsudo scoop reset
 ff-scoop: fzf-scoop-buckets
 schk: scoop-formatjson-checkver $1
