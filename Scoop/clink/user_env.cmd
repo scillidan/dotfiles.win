@@ -64,7 +64,7 @@ REM scripts
 set CDS_TERMINAL=wezterm
 
 set CLINK_PATH=^
-%    =%%USERHOME%\Share\forks\clink-gizmos;^
+%    =%%USERHOME%\Local\Source\clink\clink-gizmos;^
 %    =%%USERHOME%\Local\Source\clink\clink-zoxide;^
 %    =%%CLINK_PATH%
 
