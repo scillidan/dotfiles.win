@@ -51,6 +51,9 @@ set "BAT_STYLE=numbers,changes"
 REM forgit
 set "FORGIT_CHECKOUT_BRANCH_BRANCH_GIT_OPTS=--sort=-committerdate"
 
+REM moor
+set "MOOR=--no-linenumbers"
+
 REM clink-gizmos
 rem set "FZF_RG_EDITOR=nvim"
 set "FZF_RG_FZF_OPTIONS=--multi"
@@ -61,7 +64,7 @@ set "ZELLIJ_CONFIG_DIR=%USERHOME%/Share/dotfiles/.config/zellij/config"
 set "ZELLIJ_CONFIG_FILE=%USERHOME%/Share/dotfiles/.config/zellij/config/config.kdl"
 
 REM scripts
-set CDS_TERMINAL=wezterm
+set "CDS_TERMINAL=wezterm"
 
 set CLINK_PATH=^
 %    =%%USERHOME%\Local\Source\clink\clink-gizmos;^
