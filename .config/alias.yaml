@@ -1,17 +1,19 @@
+e: bash explorer_cd.sh
+
 ## Directory Opus
 do: bash dopus_cd.sh
-e: bash explorer_cd.sh
 
 ## scoop
 ss: scoop search
 si: scoop install
-su: scoop uninstall
+gsi: gsudo scoop install
 rsi: scoop-reinstall
+su: scoop uninstall
 rset: gsudo scoop reset
 sh: scoop home
 sup: scoop update
 sua: scoop update -a -k
 scc: scoop cleanup * && scoop cache rm *
 ff-scoop: fzf-scoop-buckets
-schk: scoop-formatjson-checkver "$@"
-sldd: ldd "$@" | grep VCRUNTIME
+schk: scoop-formatjson-checkver "$*"
+sldd: scoop-ldd $1
