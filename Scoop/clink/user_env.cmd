@@ -1,18 +1,63 @@
 @echo off
-REM
 
-REM Add the following into System's PATH and ensure them on the top
-rem C:\Users\User\Scoop\apps\git\current\bin;
-rem C:\Users\User\Scoop\apps\git\current\usr\bin;
-rem C:\Users\User\Scoop\shims
+REM (Experimental: Portable environment)
+REM Add the following into System variables
+rem USERHOME=<user_home>
+REM This is my notes; however, do not use variables in the values, but rather use the full path.
+rem SCOOP_GLOBAL=%USERHOME%/Scoop
 
-REM Add the following into user's PATH
+REM Add the following into System's PATH and ensure them on the top.
+REM Visual Studio, MSBuild, tar, find, sort ... possibly to be affected.
+rem %SCOOP%\apps\git\current\bin
+rem %SCOOP%\apps\git\current\usr\bin
+rem %SCOOP%\apps\git\current\cmd
+rem %SCOOP%\shims
+
+REM Add the following into User variables
+rem SCOOP=%USERHOME%/Scoop
 rem EDITOR=subl
 rem BROWSER=brave/librewolf
-rem PIPX_HOME="%USERHOME%/.pipx"
-rem PIPX_BIN_DIR="%USERHOME%/.local/bin"
+rem GOPATH=%USERHOME%/.local/go
+rem PIPX_HOME=%USERHOME%/.pipx
+rem PIPX_BIN_DIR=%USERHOME%/.local/bin/pipx
+rem CARGO_TARGET_DIR=%USERHOME%/.cache/cargo
+
+REM Add the following into User's PATH
+rem %USERHOME%/.local/bin
+rem %CARGO_HOME%/bin
+rem %GOPATH%/bin
+rem %PIPX_BIN_DIR%
+
+REM Updates the current symlink, rebuilds the shims
+rem scoop reset bat
+rem scoop reset bun
+rem scoop reset clink
+rem scoop reset espeak-ng
+rem scoop reset ffmpeg-shared
+rem scoop reset g
+rem scoop reset git
+rem scoop reset imagemagick
+rem scoop reset llvm
+rem scoop reset nvm
+rem scoop reset rustup
+rem scoop reset temurin21-jre
+rem scoop reset tesseract
+rem scoop reset tlrc
+rem scoop reset uv
+rem scoop reset winsshterm
+rem scoop reset yarn
+rem scoop reset sioyek
+rem scoop reset perl
+rem scoop reset miniforge3
+rem scoop reset miktex
+rem scoop reset gsudo
+rem scoop reset gnupg
+rem scoop reset ghostscript
+rem scoop reset mpv
 
 REM Sys
+set "TEMP=%USERHOME%\.temp"
+set "TMP=%USERHOME%\.temp"
 set "LC_ALL=en_US.utf8"
 set "LANG=en_US.utf8"
 set "CHANGE_LOG_NAME=User"

@@ -1,6 +1,6 @@
 ## Directory Opus
-do: dopus "%CD%\$*"
-e: explorer %CD%\$*
+do: bash dopus_cd.sh
+e: bash explorer_cd.sh
 
 ## scoop
 ss: scoop search
@@ -13,4 +13,5 @@ sup: scoop update
 sua: scoop update -a -k
 scc: scoop cleanup * && scoop cache rm *
 ff-scoop: fzf-scoop-buckets
-schk: scoop-formatjson-checkver $1
+schk: scoop-formatjson-checkver "$@"
+sldd: ldd "$@" | grep VCRUNTIME
