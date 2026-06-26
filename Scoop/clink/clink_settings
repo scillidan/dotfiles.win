@@ -1,11 +1,9 @@
-autosuggest.enable = True
-autosuggest.strategy = match_prev_cmd
+autosuggest.strategy = history completion
 clink.autoupdate = off
-direnv.enable = True
-fzf.default_bindings = True
+direnv.enable = true
+fzf.default_bindings = true
 fzf.height = 99%
 fzf_git.height = 99%
 fzf_rg.height = 99%
 fzf_rg.show_preview = bottom
-history.dupe_mode = erase_prev
-tips.enable = False
+tips.enable = false
