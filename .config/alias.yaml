@@ -18,3 +18,8 @@ scc: scoop cleanup * && scoop cache rm *
 ff-scoop: fzf-scoop-buckets.cmd
 schk: scoop-formatjson-checkver.cmd "$*"
 sldd: scoop-ldd.cmd $1
+
+## Tabby
+tbon: gsudo servy-cli start --name="Tabby"
+tboff: gsudo servy-cli stop --name="Tabby"
+tbs: servy-cli status --name="Tabby"
