@@ -12,6 +12,7 @@ rsi: scoop-reinstall
 su: scoop uninstall
 rset: gsudo scoop reset
 sh: scoop home
+sio: scoop info
 sup: scoop update
 sua: scoop update -a -k
 scc: scoop cleanup * && scoop cache rm *
