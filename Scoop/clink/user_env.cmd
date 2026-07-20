@@ -111,6 +111,8 @@ set "ZELLIJ_CONFIG_FILE=%USERHOME%/Share/dotfiles/.config/zellij/config/config.k
 REM scripts
 set "CDS_TERMINAL=wezterm"
 
+REM https://github.com/chrisant996/clink-gizmos
+REM https://github.com/shunsambongi/clink-zoxide
 set CLINK_PATH=^
 %    =%%USERHOME%\Local\Source\clink\clink-gizmos;^
 %    =%%USERHOME%\Local\Source\clink\clink-zoxide;^
