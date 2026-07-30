@@ -16,7 +16,7 @@ rem %SCOOP%\shims
 REM Add the following into User variables
 rem SCOOP=%USERHOME%/Scoop
 rem EDITOR=subl
-rem BROWSER=brave/librewolf
+rem BROWSER=brave|librewolf
 rem GOPATH=%USERHOME%/.local/go
 rem PIPX_HOME=%USERHOME%/.pipx
 rem PIPX_BIN_DIR=%USERHOME%/.local/bin/pipx
