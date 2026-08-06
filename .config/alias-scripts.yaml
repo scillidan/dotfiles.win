@@ -1,0 +1,13 @@
+e: bash explorer_cd.sh
+touch: _touch.cmd
+
+## https://github.com/scillidan/scripts
+tranx: llm_translate_stdin.cmd
+
+## Directory Opus
+do: bash dopus_cd.sh
+
+## scoop
+ff-scoop: fzf-scoop-buckets.cmd
+schk: scoop-formatjson-checkver.cmd "$*"
+sldd: scoop-ldd.cmd $1

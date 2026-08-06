@@ -1,9 +1,3 @@
-e: bash explorer_cd.sh
-touch: _touch.cmd
-
-## Directory Opus
-do: bash dopus_cd.sh
-
 ## scoop
 ss: scoop search
 si: scoop install
@@ -16,9 +10,6 @@ sio: scoop info
 sup: scoop update
 sua: scoop update -a -k
 scc: scoop cleanup * && scoop cache rm *
-ff-scoop: fzf-scoop-buckets.cmd
-schk: scoop-formatjson-checkver.cmd "$*"
-sldd: scoop-ldd.cmd $1
 
 ## Tabby
 tbon: gsudo servy-cli start --name="Tabby"
