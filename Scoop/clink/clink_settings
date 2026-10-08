@@ -6,4 +6,5 @@ fzf.height = 99%
 fzf_git.height = 99%
 fzf_rg.height = 99%
 fzf_rg.show_preview = bottom
+prompt.spacing = compact
 tips.enable = false
