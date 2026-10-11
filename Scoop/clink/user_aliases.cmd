@@ -1,4 +1,5 @@
 @echo off
+setlocal enabledelayedexpansion
 
 for %%f in (
 	"%USERHOME%\Share\dotfiles\.config\alias.yaml"
@@ -7,6 +8,10 @@ for %%f in (
 	"%USERHOME%\Share\dotfiles.win\.config\alias-scripts.yaml"
 ) do if exist "%%f" (
 	for /f "tokens=1,2 delims=@" %%a in ('yq -o props "... comments = """"" --properties-separator="@" "%%f"') do (
-		if "%%a" NEQ "" doskey %%a=%%b $*
+		if "%%a" NEQ "" (
+			set "m=%%b"
+			set "m=!m:$USERHOME=%USERHOME%!"
+			doskey %%a=!m! $*
+		)
 	)
 )
