@@ -4,6 +4,9 @@ touch: _touch.cmd
 ## https://github.com/scillidan/scripts
 tranx: llm_translate_stdin.cmd
 
+## fzf
+fg: cd /d "%USERHOME%/Share/files" && clink lua -- "%USERHOME%/Share/dotfiles.win/Scoop/clink/fzf_rg_wrap.lua" --fromcmdline 2>nul
+
 ## Directory Opus
 do: bash dopus_cd.sh
 
