@@ -1,0 +1,15 @@
+## cmd builtin → uutils coreutils
+md: mkdir.exe $*
+mkdir: mkdir.exe $*
+rd: rmdir.exe $*
+rmdir: rmdir.exe $*
+del: rm.exe $*
+erase: rm.exe $*
+copy: cp.exe $*
+move: mv.exe $*
+ren: mv.exe $*
+rename: mv.exe $*
+date: date.exe $*
+type: cat.exe $*
+
+gunzip: gzip -d $*
