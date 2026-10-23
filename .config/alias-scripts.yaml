@@ -5,7 +5,7 @@ touch: _touch.cmd
 tranx: llm_translate_stdin.cmd
 
 ## fzf
-fg: cd /d "%USERHOME%/Share/files" && clink lua -- "%USERHOME%/Share/dotfiles.win/Scoop/clink/fzf_rg_wrap.lua" --fromcmdline 2>nul
+fg: fzf-ripgrep.cmd
 
 ## Directory Opus
 do: bash dopus_cd.sh
@@ -13,4 +13,5 @@ do: bash dopus_cd.sh
 ## scoop
 ff-scoop: fzf-scoop-buckets.cmd
 schk: scoop-formatjson-checkver.cmd "$*"
+schkd: scoop-check-depends.cmd "$*"
 sldd: scoop-ldd.cmd $1
