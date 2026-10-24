@@ -1,14 +1,8 @@
-e: bash explorer_cd.sh
-touch: _touch.cmd
-
 ## https://github.com/scillidan/scripts
-tranx: llm_translate_stdin.cmd
 
-## fzf
-fg: fzf-ripgrep.cmd
-
-## Directory Opus
-do: bash dopus_cd.sh
+e: bash explorer-cd.sh
+td: cd "$USERHOME/Share" && tere.bat
+touch: _touch.cmd
 
 ## scoop
 ff-scoop: fzf-scoop-buckets.cmd

@@ -32,7 +32,7 @@ set keymap emacs
 "\e[27;5;32~": "luafunc:fzf_complete_force"
 
 "\M-d": "luafunc:fzf_directory"
-"\M-f": "luafunc:fzf_file"
-"\M-g": "luafunc:fzf_ripgrep"
+# "\M-f": "luafunc:fzf_file"
+# "\M-g": "luafunc:fzf_ripgrep"
 
 $endif
