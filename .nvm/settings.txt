@@ -1,4 +1,4 @@
-root: C:\Users\User\.nvm
+root: %USERHOME%\.nvm
 arch: 64
 proxy: 
 originalpath: .

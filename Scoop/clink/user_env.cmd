@@ -4,7 +4,7 @@ REM (Experimental: Portable environment)
 REM Add the following into System variables
 rem USERHOME=<user_home>
 REM This is my notes; however, do not use variables in the values, but rather use the full path.
-rem SCOOP_GLOBAL=%USERHOME%/Scoop
+REM set SCOOP_GLOBAL=%USERHOME%/Scoop by once, unset it later
 
 REM Add the following into System's PATH and ensure them on the top.
 REM Visual Studio, MSBuild, tar, find, sort ... possibly to be affected.

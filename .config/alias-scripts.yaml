@@ -3,6 +3,7 @@
 e: bash explorer-cd.sh
 td: cd "$USERHOME/Share" && tere.bat
 touch: _touch.cmd
+ef: bash es-files.sh
 
 ## scoop
 ff-scoop: fzf-scoop-buckets.cmd
