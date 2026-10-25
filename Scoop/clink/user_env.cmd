@@ -4,7 +4,6 @@ REM (Experimental: Portable environment)
 REM Add the following into System variables
 rem USERHOME=<user_home>
 REM This is my notes; however, do not use variables in the values, but rather use the full path.
-REM set SCOOP_GLOBAL=%USERHOME%/Scoop by once, unset it later
 
 REM Add the following into System's PATH and ensure them on the top.
 REM Visual Studio, MSBuild, tar, find, sort ... possibly to be affected.
@@ -15,6 +14,7 @@ rem %SCOOP%\shims
 
 REM Add the following into User variables
 rem SCOOP=%USERHOME%/Scoop
+rem SCOOP_GLOBAL=%USERHOME%/Scoop-Global
 rem EDITOR=subl
 rem BROWSER=brave|librewolf
 rem GOPATH=%USERHOME%/.local/go
