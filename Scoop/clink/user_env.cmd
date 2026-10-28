@@ -119,6 +119,9 @@ set CLINK_PATH=^
 %    =%%USERHOME%\Local\Source\clink\clink-zoxide;^
 %    =%%CLINK_PATH%
 
+REM Share\scripts\win first: its scoop.cmd wrapper must win over %SCOOP%\shims,
+REM which sits early in the *system* PATH and would otherwise shadow it.
 set PATH=^
+%    =%%USERHOME%\Share\scripts\win;^
 %    =%%USERHOME%\Local\Lib\keypirinha-sdk\cmd;^
 %    =%%PATH%
