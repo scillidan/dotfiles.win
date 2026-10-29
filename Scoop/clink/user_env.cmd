@@ -15,8 +15,8 @@ rem %SCOOP%\shims
 REM Add the following into User variables
 rem SCOOP=%USERHOME%/Scoop
 rem SCOOP_GLOBAL=%USERHOME%/Scoop-Global
-rem EDITOR=subl
-rem BROWSER=brave|librewolf
+rem EDITOR=nvim|subl
+rem BROWSER=qutebrowser|brave
 rem GOPATH=%USERHOME%/.local/go
 rem PIPX_HOME=%USERHOME%/.pipx
 rem PIPX_BIN_DIR=%USERHOME%/.local/bin/pipx
@@ -119,9 +119,8 @@ set CLINK_PATH=^
 %    =%%USERHOME%\Local\Source\clink\clink-zoxide;^
 %    =%%CLINK_PATH%
 
-REM Share\scripts\win first: its scoop.cmd wrapper must win over %SCOOP%\shims,
-REM which sits early in the *system* PATH and would otherwise shadow it.
 set PATH=^
+%    =%%USERHOME%\Share\scripts\win\patch;^
 %    =%%USERHOME%\Share\scripts\win;^
 %    =%%USERHOME%\Local\Lib\keypirinha-sdk\cmd;^
 %    =%%PATH%
