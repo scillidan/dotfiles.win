@@ -13,3 +13,4 @@ date: date.exe $*
 type: cat.exe $*
 
 gunzip: gzip -d $*
+mpv: mpv.exe $* 

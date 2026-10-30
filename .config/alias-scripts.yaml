@@ -2,11 +2,13 @@
 
 e: bash explorer-cd.sh
 td: cd "$USERHOME/Share" && tere.bat
-touch: _touch.cmd
 ef: bash es-files.sh
 
 ## scoop
-ff-scoop: fzf-scoop-buckets.cmd
+ffscoop: fzf-scoop-buckets.cmd
 schk: scoop-formatjson-checkver.cmd "$*"
 schkd: scoop-check-depends.cmd "$*"
 sldd: scoop-ldd.cmd $1
+sh2: scoop-home.cmd
+sup2: scoop-update.cmd
+ssc: scoop-shortcut.cmd
