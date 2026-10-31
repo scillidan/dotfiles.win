@@ -4,10 +4,12 @@ si: scoop install
 gsi: gsudo scoop install
 rsi: scoop-reinstall
 su: scoop uninstall
+gsu: gsidp scoop uninstall
 rset: gsudo scoop reset
 sh: scoop home
 sio: scoop info
 sup: scoop update
+gsup: gsudo scoop update
 sua: scoop update -a -k
 scc: scoop cleanup * && scoop cache rm *
 
