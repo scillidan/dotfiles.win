@@ -1,0 +1,2 @@
+.shell pwsh
+ctrl + shift + alt + c : wezterm-gui start --new-tab -- pwsh -NoProfile -NoExit -Command "pylanguagetool --api-url http://localhost:8040/v2/ --input-type html --lang en-US -c"
