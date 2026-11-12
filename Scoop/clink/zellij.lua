@@ -1,21 +1,8 @@
--- zellij.lua: clarify the Zellij 0.46 tab name.
---
--- In 0.46 a tab without an explicit name is named after the shell's console
--- title, which cmd sets to the full "cmd.exe - ...zellij-autorun.cmd" string.
--- Overriding it with the cwd's leaf directory gives short, meaningful names
--- ("dotfiles", "Downloads"). Tabs renamed with Ctrl-g then t (rename-tab) keep
--- their own name; this only runs when the prompt first appears.
+-- zellij.lua: clear the cmd.exe startup banner on the first prompt inside
+-- Zellij. Clink does not clear it when injected from cmd's AutoRun the way
+-- cmd /k init.cmd does, so the Windows banner stays above the prompt.
 
 local cleared = false
-
-local function set_title()
-    local cwd = os.getcwd()
-    if not cwd then
-        return
-    end
-    local leaf = cwd:gsub("[/\\]+$", ""):match("([^/\\]+)$") or cwd
-    os.execute('title "' .. leaf .. '"')
-end
 
 clink.onbeginedit(function()
     if cleared then
@@ -23,7 +10,6 @@ clink.onbeginedit(function()
     end
     cleared = true
     if os.getenv("ZELLIJ") then
-        set_title()
         os.execute("cls")
     end
 end)
